@@ -1,4 +1,5 @@
 const { Schema, model } = 'mongoose';
+const bcrypt = require('bycrypt');
 
 const userSchema = new Schema({
     username: { type: String, require: true, trim: true, unique: true },
