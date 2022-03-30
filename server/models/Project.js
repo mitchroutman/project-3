@@ -9,7 +9,7 @@ const projectSchema = new Schema({
 },
 {
     toJSON: { virtuals: true },
-    id: false,
+    id: true,
 });
 
 projectSchema.virtual('commentCount').get(function() {
