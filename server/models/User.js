@@ -1,10 +1,13 @@
-const { Schema, model } = 'mongoose';
-const bcrypt = require('bycrypt');
+//import * as mongoose from 'mongoose';
+const mongoose = require("mongoose");
+const  { Schema, model } = require('mongoose');
+//import bcrypt from 'bcrypt';
+const bcrypt = require('bcrypt');
 
 const userSchema = new Schema({
     username: { type: String, require: true, trim: true, unique: true },
     email: { type: String, require: true, match: [/.+@.+\..+/] },
-    projects: [{ type: Schema.Types.ObjectId, ref: 'Projects' }]
+    project: [{ type: Schema.Types.ObjectId, ref: 'Project' }]
 },
 {
     toJSON: { virtuals: true },
