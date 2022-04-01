@@ -12,15 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo": "^2.33.10",
-    "apollo-server": "^3.6.7",
     "apollo-server-express": "^3.6.7",
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
-    "graphql": "^15.8.0",
+    "graphql": "^16.3.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.2.9",
+    "mongoose": "^6.1.8",
     "oauth": "^0.9.15",
     "passport": "^0.5.2"
   }
