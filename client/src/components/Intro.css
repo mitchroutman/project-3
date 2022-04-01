@@ -39,19 +39,23 @@
   
   .i-title-wrapper {
     height: 100%;
-    animation: move 10s ease-in-out infinite alternate;
+    animation: move 7s ease-in-out infinite alternate;
   }
   
   @keyframes move {
     25% {
-      transform: translateY(-50px);
+      transform: translateY(-25px);
     }
     50% {
-      transform: translateY(-100px);
+      transform: translateY(-50px);
     }
     75% {
-        transform: translateY(-150px);
+        transform: translateY(-75px);
     }
+    100%{
+      transform: translateY(-100px);
+    }
+  
   }
   
   .i-title-item {
@@ -63,12 +67,6 @@
     align-items: center;
   }
   
-  .i-scroll {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 20px;
-  }
   
   .i-img {
     width: 100%;

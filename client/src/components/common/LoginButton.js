@@ -27,11 +27,11 @@ export const LoginButton=({
 
     const checkBtnStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
-    : STYLES [0];
+    : STYLES[0];
 
     const checkBtnSize = STYLES.includes(buttonSize)
     ? buttonSize
-    : SIZES [0];
+    : SIZES[0];
 
 
     return (
