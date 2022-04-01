@@ -1,8 +1,9 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
-  const history = useHistory();
+  const navigate = useNavigate();
+  navigate('/home')
 
   React.useEffect(() => {
     getData();
@@ -10,7 +11,7 @@ function Dashboard() {
   const getData = () => {
     const user = localStorage.getItem("user");
     if (!user) {
-      history.push("/");
+      navigate('/path', { replace: true });
     }
     //    console.log(JSON.parse(user))
   };

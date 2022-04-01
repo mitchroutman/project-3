@@ -4,10 +4,10 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import "./style.css";
-import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
-import { useHistory } from "react-router-dom";
+//import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
+import { useNavigate } from "react-router-dom";
 export default function Login(props) {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const [isLogged, setLogged] = useState(false);
@@ -45,7 +45,7 @@ export default function Login(props) {
           // alert('loged in')
           localStorage.setItem("user", JSON.stringify(data.payload));
           setLogged(true);
-          history.push("/dashboard");
+          navigate('/dashboard');
         }
       })
       .catch((err) => {
