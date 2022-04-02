@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "proxy": "http://locahost:3001",
   "scripts": {
     "start": "node server --ignore client",
     "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
@@ -18,6 +19,8 @@
     "body-parser": "^1.19.2",
     "concurrently": "^7.0.0",
     "cors": "^2.8.5",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
     "package.json": "^2.0.1"
   },
   "engines": {

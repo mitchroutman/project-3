@@ -1,31 +1,38 @@
-import logo from "./logo.svg";
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import "./App.css";
 import Login from "./components/Login/Login";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Dashboard from "./components/Dashboard/Dashboard";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+});
+
 function App() {
   return (
-    <div>
-      <h1>Welcome To Agile Lake</h1>
-      <Router>
-        <Routes>
-            <Route exact path="/">
-               <Login />
-            </Route>
+    <h1>Please Work, Thanks</h1>
+    // <ApolloProvider client={client}> 
+    //   <Router>
+    //     <Routes>
+    //         {/* <Route 
+    //           path="/login"
+    //           element={<Login />}>
+    //         </Route>
 
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
+    //       <Route path="/dashboard">
+    //         <Dashboard />
+    //       </Route> */}
 
-          <Route path="*">
-            <div>
-              <h1>Not found</h1>
-            </div>
-          </Route>
+    //       {/* <Route path="*">
+    //         <Link>
+    //           <h1>Not found</h1>
+    //         </Link>
+    //       </Route> */}
 
-        </Routes>
-      </Router>
-    </div>  
+    //     </Routes>
+    //   </Router>
+    // </ApolloProvider>
   );
 }
 

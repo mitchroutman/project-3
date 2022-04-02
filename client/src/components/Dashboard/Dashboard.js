@@ -16,7 +16,17 @@ function Dashboard() {
     //    console.log(JSON.parse(user))
   };
 
-  return <div>Dashboard</div>;
+  return ( 
+  <div>
+    <div id='dashboard-header'>
+      <h1>Dashboard</h1>
+    </div>
+    
+    <div id='dashboard-main'>
+        <h2>Your Projects</h2>
+    </div>
+  </div>
+  );
 }
 
 export default Dashboard;
