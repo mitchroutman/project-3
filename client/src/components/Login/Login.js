@@ -71,7 +71,7 @@ export default function Login(props) {
       }}
     >
       <Paper square={true} elevation={0}>
-        {isLogged == true ? (
+        {isLogged === true ? (
           <>
             <h1>You are logged in</h1>
             <Button

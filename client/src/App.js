@@ -1,38 +1,28 @@
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import "./App.css";
-import Login from "./components/Login/Login";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
 
-const client = new ApolloClient({
-  uri: '/graphql',
-  cache: new InMemoryCache(),
-});
+//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import './App.css';
+
+import Intro from './components/Intro';
+import Header from './components/common/Header/Header';
+import Dashboard from './components/Dashboard/Dashboard';
+import Login from './components/Login/Login';
+import MyAccount from "./components/MyAccount";
+import Contact from './components/Contact';
+import Project from './components/Project';
 
 function App() {
   return (
-    <h1>Please Work, Thanks</h1>
-    // <ApolloProvider client={client}> 
-    //   <Router>
-    //     <Routes>
-    //         {/* <Route 
-    //           path="/login"
-    //           element={<Login />}>
-    //         </Route>
+    <div>
+  
+      < Header />    
+      < Dashboard />
+      < Intro />
+      < Login />   
+      < MyAccount /> 
+      < Project />
+      < Contact />
 
-    //       <Route path="/dashboard">
-    //         <Dashboard />
-    //       </Route> */}
-
-    //       {/* <Route path="*">
-    //         <Link>
-    //           <h1>Not found</h1>
-    //         </Link>
-    //       </Route> */}
-
-    //     </Routes>
-    //   </Router>
-    // </ApolloProvider>
+    </div>
   );
 }
 
