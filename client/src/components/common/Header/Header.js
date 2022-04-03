@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar } from '../../common' ;
-import logo from  "../../../assets/AGILE LAKE symbol.png";
+import logo from  '../../../assets/AGILE-LAKE symbol.png'
 import { LoginButton } from '../LoginButton';
 
 import './Header.css';

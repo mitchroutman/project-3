@@ -1,7 +1,7 @@
 import React from 'react';
 import './Intro.css';
 // import './LoginButton.css';
-import logo from  "../assets/AGILE LAKE.png";
+import logo from  "../assets/AGILE-LAKE.png";
 
 
 export default function Intro() {
