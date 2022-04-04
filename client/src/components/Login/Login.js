@@ -24,7 +24,7 @@ export default function Login(props) {
     } else {
       setLogged(false);
     }
-       console.log(JSON.parse(user))
+    console.log(JSON.parse(user));
   };
 
   const HandleLogin = () => {
@@ -32,7 +32,7 @@ export default function Login(props) {
       email: email,
       password: password,
     };
-
+    console.log(data);
     fetch("/login", {
       method: "POST",
       headers: {
@@ -46,7 +46,7 @@ export default function Login(props) {
           // alert('loged in')
           localStorage.setItem("users", JSON.stringify(data.payload));
           setLogged(true);
-          history('/dashboard');
+          history("/dashboard");
         }
       })
       .catch((err) => {
