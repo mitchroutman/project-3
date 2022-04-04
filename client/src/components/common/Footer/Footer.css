@@ -1,0 +1,13 @@
+.footer {
+    /* background-color: #30D5C8; */
+    border-top:3px solid black;
+    width: 100%;
+    height: min-content;
+    bottom: 0;
+    color: black;
+    font-size: 25px;
+   }
+
+   .text{
+    margin-left: 42%;
+   }
