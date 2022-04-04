@@ -9,9 +9,9 @@ import Typography from '@mui/material/Typography';
 export default function Project() {
     return(
         <div>
-        <div id='dashboard-header'>
-          <h1>Dashboard</h1>
-        </div>
+          <div id='dashboard-header'>
+           <h1>Dashboard</h1>
+          </div>
         
         <div className="card">
           <Card sx={{ minWidth: 275 }}>
@@ -36,7 +36,6 @@ export default function Project() {
           </Card>
         </div>
               <br></br>
-    
         <div className="card">
           <Card sx={{ minWidth: 275 }}>
             <CardContent>
@@ -50,7 +49,7 @@ export default function Project() {
                 adjective
               </Typography> */}
               <Typography variant="body2">
-                Due 4/1/22
+                Due 4/30/22
                 <br />
               </Typography>
             </CardContent>
@@ -59,7 +58,59 @@ export default function Project() {
             </CardActions>
           </Card>
         </div>
+        <br></br>
     
+        <div className="card">
+          <Card sx={{ minWidth: 275 }}>
+            <CardContent>
+              <Typography sx={{ fontSize: 22 }} color="text.secondary" gutterBottom>
+                    Debug website        
+              </Typography>
+              {/* <Typography variant="h5" component="div">
+                be{bull}nev{bull}o{bull}lent
+              </Typography> */}
+              {/* <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                adjective
+              </Typography> */}
+              <Typography variant="body2">
+                Due 4/5/22
+                <br />
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Learn More</Button>
+            </CardActions>
+          </Card>
+        </div>
+        <br></br>
+
+        <div id="rightcolumn">
+        <div className="card">
+          <Card sx={{ minWidth: 275 }}>
+            <CardContent>
+              <Typography sx={{ fontSize: 22 }} color="text.secondary" gutterBottom>
+                    Get grocieries    
+              </Typography>
+              {/* <Typography variant="h5" component="div">
+                be{bull}nev{bull}o{bull}lent
+              </Typography> */}
+              {/* <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                adjective
+              </Typography> */}
+              <Typography variant="body2">
+                Due Today
+                <br />
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small">Learn More</Button>
+            </CardActions>
+          </Card>
+        </div>
+        <br></br>
+
+        </div>
+
       </div>
     );
 }
