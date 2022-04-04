@@ -3,11 +3,11 @@ import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
-//import "./style.css";
+import "./style.css";
 //import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 export default function Login(props) {
-  const navigate = useNavigate();
+  const history = useHistory();
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const [isLogged, setLogged] = useState(false);
@@ -23,7 +23,7 @@ export default function Login(props) {
     } else {
       setLogged(false);
     }
-    //    console.log(JSON.parse(user))
+       console.log(JSON.parse(user))
   };
 
   const HandleLogin = () => {
@@ -32,7 +32,7 @@ export default function Login(props) {
       password: password,
     };
 
-    fetch("/signin", {
+    fetch("/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,7 +45,7 @@ export default function Login(props) {
           // alert('loged in')
           localStorage.setItem("user", JSON.stringify(data.payload));
           setLogged(true);
-          navigate('/dashboard');
+          history('/dashboard');
         }
       })
       .catch((err) => {

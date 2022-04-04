@@ -1,5 +1,5 @@
-
-//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//import { BrowserRouter as Switch, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from 'react-router-dom'
 import './App.css';
 
 import Intro from './components/Intro';
@@ -10,19 +10,29 @@ import MyAccount from "./components/MyAccount";
 import Contact from './components/Contact';
 import Project from './components/Project';
 
+//import Create from './components/create';
+import { BrowserRouter } from 'react-router-dom';
+
 function App() {
   return (
-    <div>
-  
-      < Header />    
-      < Dashboard />
-      < Intro />
-      < Login />   
-      < MyAccount /> 
-      < Project />
-      < Contact />
+    <BrowserRouter>
+      < Header />
+      
+     <Routes>
+      < Route exact path="/login" component={Login} />
+      < Route exact path="/dashboard" component={Dashboard} />
+      < Route exact path="/user" component={MyAccount} />
+      < Route exact path="/projects" component={Project} />
+      < Route exact path="contact" component={Contact} />
+      
+      < Route exact path="/" component={Intro} />
 
-    </div>
+      
+      {/* < Route exact path="/create" component={Create} />
+       */}
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 

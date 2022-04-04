@@ -1,20 +1,20 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
-  const navigate = useNavigate();
-  navigate('/home')
+  // //const navigate = useNavigate();
+  // //navigate('/dashboard')
 
-  React.useEffect(() => {
-    getData();
-  }, []);
-  const getData = () => {
-    const user = localStorage.getItem("user");
-    if (!user) {
-      navigate('/path', { replace: true });
-    }
-    //    console.log(JSON.parse(user))
-  };
+  // React.useEffect(() => {
+  //   getData();
+  // }, []);
+  // const getData = () => {
+  //   const user = localStorage.getItem("user");
+  //   if (!user) {
+  //     //navigate('/path', { replace: true });
+  //   }
+  //   //    console.log(JSON.parse(user))
+  // };
 
   return ( 
   <div>
