@@ -3,9 +3,7 @@ import './Signup.css';
 
 function Signup() {
     return (
-        <div>
-            <h1>Sign Up</h1>
-        </div>
+        <h1>Test</h1>
     )
 }
 export default Signup()
