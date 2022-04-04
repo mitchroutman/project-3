@@ -47,17 +47,19 @@ export default function Contact () {
           <h1 className="c-title">Let's chat</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4e5An71TVIRGtPVmTLf87PQhhJSj3DGT3mGauPqukC0IeU1_NEkS6ngBI6pfUwIfOWk&usqp=CAU" alt="" className="c-icon" />
+              {/* <div className="c-icon"> */}
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4e5An71TVIRGtPVmTLf87PQhhJSj3DGT3mGauPqukC0IeU1_NEkS6ngBI6pfUwIfOWk&usqp=CAU" alt=""  />
               +1 1234 556 75
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgGWNixrXfkjnfdzBf0kXHROBh-8ZPTLvOnA&usqp=CAU" alt="" />
-              Shifrawagsahll@gmail.com
+              <img className="c-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgGWNixrXfkjnfdzBf0kXHROBh-8ZPTLvOnA&usqp=CAU" alt=""  />
+              Agilelake@agilelake.com
             </div>
             <div className="c-info-item">
-              <img className="c-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRh-5664Cfs2snsLO9aTMKJAGQ0s2IA0yGkg&usqp=CAU" alt="" />
+              <img className="c-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRh-5664Cfs2snsLO9aTMKJAGQ0s2IA0yGkg&usqp=CAU" alt=""  />
              Brooklyn, New York
             </div>
+            {/* </div> */}
           </div>
         </div>
         <div className="c-right">
