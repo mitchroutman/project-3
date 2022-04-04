@@ -2,9 +2,16 @@ const { User, Project } = require('../models');
 
 module.exports = {
     //== LOGIN ==//
-    async login() {
-        
+    async login({ body }, res) {
+        const user = await User.create(body);
+
+        if (!user) {
+            return res.status(400).json({ message: 'Something is wrong' });
+        }
+        const token = signToken(user);
+        res.json({ token, user });
     },
+
     //== CREATE NEW PROJECT ==//
     async newProject({ body }, res) {
         const project = await Project.create(body);
@@ -24,6 +31,17 @@ module.exports = {
         }
         res.status(200).json(allProjects);
     },
+    
+    //== GET ALL USERS PROJECTS ==//
+    async getUserProject(req, res) {
+        const userProj = await Project.find({ user_id });
+
+        if (!userProj) {
+            res.status(400).json({ message: 'No projects' });
+        } 
+        res.status(200).json(userProj);
+    },
+
     //== GET PROJECT ==//
     async getProject({ params }, res) {
         const project = await Project.findOne({ _id: params.id });

@@ -33,7 +33,7 @@ export default function Login(props) {
       password: password,
     };
 
-    fetch("/login", {
+    fetch("/api/user/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
