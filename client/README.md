@@ -1,3 +1,44 @@
+
+## Agile lake
+```
+Agile lake is a project management site, that helps users and enterprise stay on top of their work and projects.
+```
+
+## User Story
+```
+As an every day worker
+I want to be able to stay on top of my assignments and my to do list 
+So that I can the best employee 
+```
+## Link
+Visit our website at: https://agile-lake-10941.herokuapp.com/
+For our code follow this link: https://github.com/mitchroutman/project-3
+
+## Technologies used
+GitHub, Heroku, VS code, React, Node.js
+
+
+## Mock-Up
+
+<img src=".\src\assets\screencapture-localhost-3000-2022-04-04-17_22_25.png" alt="screenshot of website 1">
+<img src=".\src\assets\screencapture-localhost-3000-contact-2022-04-04-17_33_13.png" alt="screenshot of website 2">  
+<img src=".\src\assets\screencapture-localhost-3000-project-2022-04-04-17_32_30.png" alt="screenshot of website 2">
+
+
+
+
+## Contact info
+For questions, comments, and contributions please contact us:
+
+<a href="https://github.com/skhangns"> Sohaeb Khan,  </a>
+<a href="https://github.com/mitchroutman"> Mitchell Routman,   </a>
+<a href="https://github.com/swagshall"> Shifra Wagshall </a> 
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
