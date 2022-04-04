@@ -4,6 +4,7 @@ import './App.css';
 
 import Intro from './components/Intro';
 import Header from './components/common/Header/Header';
+import Footer from './components/common/Footer/Footer';
 import Dashboard from './components/Dashboard/Dashboard';
 import Login from './components/Login/Login';
 //import MyAccount from "./components/MyAccount";
@@ -32,6 +33,7 @@ function App() {
       
       
       </Routes>
+      <Footer />
     </BrowserRouter>
     
   );

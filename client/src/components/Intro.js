@@ -20,13 +20,16 @@ export default function Intro() {
                       <div className='i-title-wrapper'> 
                         
                           <div className='i-title-item'> 
-                          "This is the best project managment website out there." -S.K.
+                          S.K LLC
+                          {/* "This is the best project managment website out there." -S.K. */}
                           </div>
                           <div className='i-title-item'> 
-                          "I've been in the field for years, this is the only site I will use." -M.R.
+                          MR Inc.
+                          {/* "I've been in the field for years, this is the only site I will use." -M.R. */}
                           </div>
                           <div className='i-title-item'> 
-                          "LOVE this site, it's so clean and user friendly." -S.W.
+                          S.W. LLc.
+                          {/* "LOVE this site, it's so clean and user friendly." -S.W. */}
                           </div>
                         
                       </div>
