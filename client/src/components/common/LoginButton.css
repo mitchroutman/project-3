@@ -1,0 +1,32 @@
+:root{
+    --primary: #00AFEF;
+    --warning: yellow;
+    --danger: red;
+    --success: green;
+    --white: white;
+    --black: black;
+
+}
+
+.btn{
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: var(--primary);
+    color: var(--black);
+    border: none;
+    padding: 15px 30px;
+    
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn--pramary--solid{
+    background-color: var(--primary);
+    color: var(--black);
+    border: none;
+}

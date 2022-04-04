@@ -33,7 +33,7 @@ router.post("/signup", async (req, res) => {
 
 //@sigin
 
-router.post("/signin", async (req, res) => {
+router.post("/login", async (req, res) => {
   const { email, password } = req.body;
   if (!email || !password) {
     return res.status(422).send({ error: "must provide email or password" });

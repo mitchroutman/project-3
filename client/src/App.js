@@ -1,26 +1,39 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Login from "./components/Login/Login";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Dashboard from "./components/Dashboard/Dashboard";
+//import { BrowserRouter as Switch, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from 'react-router-dom'
+import './App.css';
+
+import Intro from './components/Intro';
+import Header from './components/common/Header/Header';
+import Dashboard from './components/Dashboard/Dashboard';
+import Login from './components/Login/Login';
+//import MyAccount from "./components/MyAccount";
+import Contact from './components/Contact';
+import Project from './components/Project';
+
+//import Create from './components/create';
+import { BrowserRouter } from 'react-router-dom';
+
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Login />
-        </Route>
+    <BrowserRouter>
+      < Header />
+      
+     <Routes>
+      < Route exact path="/login" component={Login} />
+      {/* < Route exact path="/dashboard" component={Dashboard} /> */}
+      < Route exact path="/user" component={Dashboard} />
+      < Route exact path="/projects" component={Project} />
+      < Route exact path="/contact" component={Contact} />
+      
+      {/* < Route exact path="/create" component={Create} /> */}
 
-        <Route path="/dashboard">
-          <Dashboard />
-        </Route>
-        <Route path="*">
-          <div>
-            <h1>Not found</h1>
-          </div>
-        </Route>
-      </Switch>
-    </Router>
+      < Route exact path="/" component={Intro} />
+
+      
+      
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 
