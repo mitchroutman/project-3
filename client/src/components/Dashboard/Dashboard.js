@@ -1,9 +1,9 @@
 import React from "react";
-//import { useNavigate } from "react-router-dom";
+//import { useHistory } from "react-router-dom";
 
 function Dashboard() {
-  // //const navigate = useNavigate();
-  // //navigate('/dashboard')
+  // //const history = useHistory();
+  // //history('/dashboard')
 
   // React.useEffect(() => {
   //   getData();

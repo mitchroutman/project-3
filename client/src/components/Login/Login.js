@@ -6,6 +6,7 @@ import TextField from "@mui/material/TextField";
 import "./style.css";
 //import VerifiedUserOutlinedIcon from "@mui/icons-material/VerifiedUserOutlined";
 import { useHistory } from "react-router-dom";
+
 export default function Login(props) {
   const history = useHistory();
   const [email, setemail] = useState("");
@@ -43,7 +44,7 @@ export default function Login(props) {
       .then((data) => {
         if (data.success) {
           // alert('loged in')
-          localStorage.setItem("user", JSON.stringify(data.payload));
+          localStorage.setItem("users", JSON.stringify(data.payload));
           setLogged(true);
           history('/dashboard');
         }
