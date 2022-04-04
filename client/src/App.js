@@ -6,7 +6,7 @@ import Intro from './components/Intro';
 import Header from './components/common/Header/Header';
 import Dashboard from './components/Dashboard/Dashboard';
 import Login from './components/Login/Login';
-import MyAccount from "./components/MyAccount";
+//import MyAccount from "./components/MyAccount";
 import Contact from './components/Contact';
 import Project from './components/Project';
 
@@ -20,16 +20,17 @@ function App() {
       
      <Routes>
       < Route exact path="/login" component={Login} />
-      < Route exact path="/dashboard" component={Dashboard} />
-      < Route exact path="/user" component={MyAccount} />
+      {/* < Route exact path="/dashboard" component={Dashboard} /> */}
+      < Route exact path="/user" component={Dashboard} />
       < Route exact path="/projects" component={Project} />
-      < Route exact path="contact" component={Contact} />
+      < Route exact path="/contact" component={Contact} />
       
+      {/* < Route exact path="/create" component={Create} /> */}
+
       < Route exact path="/" component={Intro} />
 
       
-      {/* < Route exact path="/create" component={Create} />
-       */}
+      
       </Routes>
     </BrowserRouter>
     
