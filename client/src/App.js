@@ -1,7 +1,6 @@
-//import { BrowserRouter as Switch, Route } from "react-router-dom";
 import { BrowserRouter as Routes, Route } from 'react-router-dom'
 import './App.css';
-
+import axios from 'axios';
 import Intro from './components/Intro';
 import Header from './components/common/Header/Header';
 import Footer from './components/common/Footer/Footer';
@@ -13,29 +12,28 @@ import Project from './components/Project';
 
 //import Create from './components/create';
 import { BrowserRouter } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+
   return (
-    <BrowserRouter>
-      < Header />
-      
-     <Routes>
-      < Route exact path="/login" component={Login} />
-      {/* < Route exact path="/dashboard" component={Dashboard} /> */}
-      < Route exact path="/user" component={Dashboard} />
-      < Route exact path="/project" component={Project} />
-      < Route exact path="/contact" component={Contact} />
-      
-      {/* < Route exact path="/create" component={Create} /> */}
 
-      < Route exact path="/" component={Intro} />
+      <BrowserRouter>
+        < Header />
+        <Routes>
+          < Route exact path="/login" component={Login} />
+          {/* < Route exact path="/dashboard" component={Dashboard} /> */}
+          < Route exact path="/user" component={Dashboard} />
+          < Route exact path="/project" component={Project} />
+          < Route exact path="/contact" component={Contact} />
+          < Route exact path="/" component={Intro} />
 
-      
-      
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-    
+
+
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+
   );
 }
 
