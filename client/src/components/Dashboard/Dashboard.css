@@ -1,0 +1,11 @@
+.card {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#dashboard-header {
+    display: flex;
+    flex-direction: row;
+}

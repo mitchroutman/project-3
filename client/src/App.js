@@ -23,7 +23,7 @@ function App() {
       < Route exact path="/login" component={Login} />
       {/* < Route exact path="/dashboard" component={Dashboard} /> */}
       < Route exact path="/user" component={Dashboard} />
-      < Route exact path="/projects" component={Project} />
+      < Route exact path="/project" component={Project} />
       < Route exact path="/contact" component={Contact} />
       
       {/* < Route exact path="/create" component={Create} /> */}
